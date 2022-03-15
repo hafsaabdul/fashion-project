@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto' , sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+body{
+    background-color: rgb(212, 216, 216);
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(153, 173, 173);
+    border-bottom: 5px solid rgb(153, 156, 156);
+    z-index: 9;
+    align-items: center;
+    justify-content: space-between; 
+}
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-logo{
+    padding: .5rem;
+    height: 60px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(10, 10, 10);
+    font-size: 2.4rem;
+}
+.brand-logo span{
+    color: orange;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    overflow: hidden;
+    margin-left: 10rem;
+}
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #f6f6f6;
+    text-transform: uppercase;
+    background-color: none;
+    color: #a9a9a9;
+    outline: none;
+}
+.search-btn{
+    width: 5rem;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #0c0b0b;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search-box::placeholder{
+    color: #141313;
+}
+.menu div,
+.menu a{
+    margin-right: 1rem;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    background-color: black;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem; 
+}
+.menu div:hover,
+.menu a:hover{
+    background-color: orange;
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #f1f0f0;
+}
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+    font-size: 1.5rem;
+}
+.link:hover{
+    opacity: 1.5;
+}

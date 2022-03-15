@@ -1,0 +1,53 @@
+@import 'nav-bar.css';
+@import  'footer.css';
+
+#blog{
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+#blog h1{
+    font-weight: bold;
+    padding-top: 5px;
+}
+#blog-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    object-fit: cover;
+    /* padding-bottom:5rem ; */
+}
+#blog-container .post:hover img{
+    transform: scale(1.1) rotate(-1deg);
+    opacity: 0.8;
+}
+#blog-container .post-img{
+    transition: 0.3s ease;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#blog-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer;
+}
+#blog-container .post-img{
+    transition: 0.3s ease;
+}
+#blog-container .post:hover h3{
+    color: #fd8c66;
+} 
+#blog-container h3{ 
+    text-align: center;
+    font-weight: normal;
+    padding-top: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}

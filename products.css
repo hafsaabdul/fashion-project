@@ -1,0 +1,170 @@
+@import 'nav-bar.css';
+@import  'footer.css';
+
+.icon{
+    position: absolute;
+    top: 0;
+    right:1rem;
+    /* opacity: 1; */
+}
+.icon a{
+    transform: translateX(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 20%;
+    background: black;
+    color: white;
+    margin-top: 1rem;
+    display: block;
+}
+.icon a:hover{
+    background: white;
+}
+.stars i{
+    font-size: 1rem;
+    color: rgb(207, 146, 23);
+    
+}
+/* section{
+    margin: 0 18rem 2rem 0;
+} */
+
+.product-details{
+    width: 100%;
+    padding: 60px 10vw;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 23rem 2rem 0; */
+    /* margin-left: 5rem; */
+    /* padding-left: 5rem; */
+    /* padding-right: 10rem; */
+}
+.image-slider{
+    width: 500px;
+    height: 800px;
+    position: relative;
+    background-image: url('images/frontDr.jpg');
+    background-size: cover;
+}
+.product-images{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 100px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.product-images img{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.product-images img.active{
+    opacity: 0.5;
+}
+.details{
+    width: 50%;
+    /* margin-right: 15rem; */
+}
+.details .product-brand{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.details .short-des{
+    font-size: 28px;
+    line-height: 30px;
+    height: auto;
+    margin: 15px 0 30px;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 30px;
+}
+.product-actual-price{
+    font-size: 30px;
+    opacity: 0.5;
+    text-decoration: line-through;
+    margin: 0 20px ;
+    font-weight: 300; 
+}
+.product-discount{
+    color: #ff7d7d;
+    font-size: 20px;
+}
+.produc-sub-heading{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 60px 0 10px;
+    font-weight: 300;
+}
+.size-radio-btn{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #383838;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 0;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #383838;
+    cursor: pointer;
+}
+.size-radio-btn.check{
+    background: #383838;
+    color: #fff;
+}
+.btn{
+    width: 17rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #383838;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.btn-cart-btn{
+    width: 17rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #383838;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn-cart-btn{
+    margin-right: 2%;
+    background: #383838;
+    color: #fff;
+}
+.detai-des{
+    padding: 0 10vw;
+    text-transform: capitalize;
+}
+.heading{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.des{
+    color: #383838;
+    line-height: 25px;
+}
